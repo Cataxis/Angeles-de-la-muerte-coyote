@@ -1,0 +1,106 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 34, in script call
+    call respuestaUno
+  File "game/script.rpy", line 51, in script call
+    call respuestaDos
+  File "game/script.rpy", line 70, in script call
+    call respuestaTres
+  File "game/script.rpy", line 89, in script call
+    call respuestaCuatro
+  File "game/script.rpy", line 120, in script call
+    call respuestaCinco
+  File "game/script.rpy", line 141, in script call
+    call respuestaSeis
+  File "game/script.rpy", line 188, in script call
+    call respuestaSiete
+  File "game/script.rpy", line 221, in script call
+    call respuestaOcho
+  File "game/script.rpy", line 235, in script call
+    call respuestaNueve
+  File "game/script.rpy", line 255, in script call
+    call respuestaDiez
+  File "game/script.rpy", line 306, in script call
+    call respuestaOnce
+  File "game/script.rpy", line 367, in script
+    menu doce:
+  File "renpy/common/000window.rpy", line 111, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 101, in _window_hide
+    renpy.with_statement(trans)
+  File "renpy/common/00action_other.rpy", line 583, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 11, in mouse_moviendo
+    renpy.set_mouse_pos(pos_objetivo[0], pos_objetivo[1], abs[1.16*pos_actual[0]-pos_objetivo[0] * 0.0022])
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 34, in script call
+    call respuestaUno
+  File "game/script.rpy", line 51, in script call
+    call respuestaDos
+  File "game/script.rpy", line 70, in script call
+    call respuestaTres
+  File "game/script.rpy", line 89, in script call
+    call respuestaCuatro
+  File "game/script.rpy", line 120, in script call
+    call respuestaCinco
+  File "game/script.rpy", line 141, in script call
+    call respuestaSeis
+  File "game/script.rpy", line 188, in script call
+    call respuestaSiete
+  File "game/script.rpy", line 221, in script call
+    call respuestaOcho
+  File "game/script.rpy", line 235, in script call
+    call respuestaNueve
+  File "game/script.rpy", line 255, in script call
+    call respuestaDiez
+  File "game/script.rpy", line 306, in script call
+    call respuestaOnce
+  File "game/script.rpy", line 367, in script
+    menu doce:
+  File "renpy/ast.py", line 1880, in execute
+    statement_name("menu")
+  File "renpy/ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 111, in _window_auto_callback
+    _window_hide(auto=True)
+  File "renpy/common/000window.rpy", line 101, in _window_hide
+    renpy.with_statement(trans)
+  File "renpy/exports.py", line 1757, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "renpy/display/core.py", line 2978, in do_with
+    clear=clear)
+  File "renpy/display/core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "renpy/display/core.py", line 4540, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 53, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/behavior.py", line 2574, in event
+    return run(self.function, *self.args, **self.kwargs)
+  File "renpy/display/behavior.py", line 375, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_other.rpy", line 583, in __call__
+    rv = self.callable(*self.args, **self.kwargs)
+  File "game/script.rpy", line 11, in mouse_moviendo
+    renpy.set_mouse_pos(pos_objetivo[0], pos_objetivo[1], abs[1.16*pos_actual[0]-pos_objetivo[0] * 0.0022])
+TypeError: 'builtin_function_or_method' object has no attribute '__getitem__'
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 7.6.1.23060707
+Frontera 1.0
+Wed Jul 26 14:01:19 2023

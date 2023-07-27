@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 3: expected statement.
+    def eliminar_saves():
+                      ^
+
+File "game/script.rpy", line 465: expected statement.
+    eliminar_saves()
+                    ^
+
+Ren'Py Version: Ren'Py 7.6.1.23060707
+Wed Jul 26 20:02:22 2023
